@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/weastur/votion.svg?branch=master)](https://travis-ci.org/weastur/votion)
 [![codecov](https://codecov.io/gh/weastur/votion/branch/master/graph/badge.svg)](https://codecov.io/gh/weastur/votion)
+[![PyPi version](https://img.shields.io/pypi/v/votion.svg)](https://pypi.org/project/votion/)
+[![Python versions](https://img.shields.io/pypi/pyversions/votion)](https://pypi.org/project/votion/)
 [![MIT License](https://img.shields.io/github/license/weastur/votion)](https://github.com/weastur/votion/blob/master/LICENSE)
 [![Open PR](https://img.shields.io/github/issues-pr-raw/weastur/votion)](https://github.com/weastur/votion/pulls)
 [![Open Issues](https://img.shields.io/github/issues-raw/weastur/votion)](https://github.com/weastur/votion/issues)
