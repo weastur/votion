@@ -3,9 +3,12 @@ dist: bionic
 python:
 - '3.7'
 - '3.8'
-- '3.9-dev'
+- 3.9-dev
 install:
 - pip install poetry
 - poetry install
 script:
 - pytest --cov=votion
+notifications:
+  slack:
+    secure: TFECgIn1IjYI5qdgnVHTRvzncwLt+NTXoel+gPBAceG6TKQcmKJrK3S+0Dkr5gIBDGd0xYHVTqEm9hOKf6tjNuq0vTw6AcAM5a28jf4xBI42NLkO7n6rY1ObNz9PDtpBElMgWl4MdOwnq1q0PUaFumVlxsC7mzaKxFKCVpKR+xfHZKg32yAYULhcX8YO45irTc7Vd6fP8bsr01yRY/N52aLA3rXqv10gfzFaskWBXhtJCgBkDalbJIlYrfuoW7jGcd+egJh/VggJ0a9NkojtT86eihe6RhPQBo0dxUmk56Hkir+VVf1YCz3vKnapCd7fkr5Pn6nXW4+96DEpnqT9lo3xulQCoc1J3Jjg8fdJmgVAueLYe/4fCPeV8BxGHT94OYy9uZrz836pr765cEh/F3zMp9KNTq9te4C0e9V1pWprQq5kRgTEyHK6XWGpFwT6AquqIGdrEhLwq13OuCnPzcIg1EyT39/oFmAuH/lY7S71vYKKGWgYNdy54YCYdZdgOEMH+e9XiuAx6+XLqxNWMLx01kVNOE1I5s2weK1JAhvc22PgreQlnJje02gzTwNH/rCXvUcX5SxmUqtmEFCRjGj1ZSL4/0b47nw/3ud+3FpNeQpH6bs0gqfwiHJgn482EIn8niAHPy3NJ+W2lnNtMixdq3J3WDcIRY8n2ifsv7g=
