@@ -13,6 +13,7 @@ install:
 
 script:
   - pytest --cov=votion
+  - black --check votion
 
 after_success:
   - codecov
