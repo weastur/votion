@@ -1,7 +1,7 @@
 """Foo module."""
 
 
-def plus(one, two):
+def plus(one: int, two: int) -> int:
     """Calculate sum of arguments.
 
     Args:

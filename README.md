@@ -4,6 +4,7 @@
 [![codecov](https://codecov.io/gh/weastur/votion/branch/master/graph/badge.svg)](https://codecov.io/gh/weastur/votion)
 [![black-formatter](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
 
 ---
 
