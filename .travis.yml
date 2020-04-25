@@ -14,6 +14,7 @@ install:
 script:
   - pytest --cov=votion
   - black --check votion
+  - flake8 votion
 
 after_success:
   - codecov

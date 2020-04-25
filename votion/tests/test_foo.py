@@ -1,5 +1,8 @@
-from votion.foo import bar
+"""Test foo functions."""
+
+from votion.foo import plus
 
 
-def test_bar():
-    assert bar(2, 2) == 4
+def test_plus():
+    """Test plus function."""
+    assert plus(2, 2) == 4
