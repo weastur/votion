@@ -1,0 +1,23 @@
+CommitMsg:
+  CapitalizedSubject:
+    enabled: true
+    on_warn: fail
+  EmptyMessage:
+    enabled: true
+    on_warn: fail
+  SingleLineSubject:
+    enabled: true
+    on_warn: fail
+  TextWidth:
+    enabled: true
+    on_warn: fail
+    max_subject_width: 70
+    min_subject_width: 10
+  TrailingPeriod:
+    enabled: true
+    on_warn: fail
+PreCommit:
+  TrailingWhitespace:
+    enabled: true
+    exclude:
+      - '**/*.md'
