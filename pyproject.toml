@@ -1,9 +1,15 @@
 [tool.poetry]
 name = "votion"
-version = "0.0.1"
+version = "0.0.4"
 description = "Docker image build tool"
 authors = ["Pavel Sapezhko <me@weastur.com>"]
+maintainers = ["Pavel Sapezhko <me@weastur.com>"]
+readme = "README.md"
 license = "MIT"
+repository = "https://github.com/weastur/votion"
+
+[tool.poetry.scripts]
+votion = "votion.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.7"
