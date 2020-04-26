@@ -37,13 +37,13 @@ poetry install
 
 This will install dependencies and all needed packages for development, like pytest, wemake-python-styleguide, mypy, black.
 
-Optionally, you can install [overcommit](https://github.com/sds/overcommit).
+Highly recommend to install [overcommit](https://github.com/sds/overcommit).
 
 ```bash
 overcommit -i
 ```
 
-After, all commits will be checked when you create them. Same checks run on CI. Additionally
+After, all commits will be checked on set of rules when you create them. Additionally
 on CI executed flake8, mypy, black, and unit tests. You can easily integrate same checks into your editor.
 This checks aren't executed with hooks, because otherwise you'll be able to commit only inside virtualenv.
 
