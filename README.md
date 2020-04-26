@@ -12,3 +12,47 @@
 ---
 
 Docker image build tool
+
+## Features
+
+## Documentation
+
+For full documentation please go [here](https://votion.readthedocs.io/en/latest/).
+
+## Instalation
+
+```bash
+pip install votion
+```
+
+## Development
+
+For development first you need [poetry](https://github.com/python-poetry/poetry) and python 3.7+
+
+```bash
+git clone git@github.com:weastur/votion.git
+cd votion
+poetry install
+```
+
+This will install dependencies and all needed packages for development, like pytest, wemake-python-styleguide, mypy, black.
+
+Optionally, you can install [overcommit](https://github.com/sds/overcommit).
+
+```bash
+overcommit -i
+```
+
+After, all commits will be checked when you create them. Same checks run on CI. Additionally
+on CI executed flake8, mypy, black, and unit tests. You can easily integrate same checks into your editor.
+This checks aren't executed with hooks, because otherwise you'll be able to commit only inside virtualenv.
+
+## Bugs/Requests
+
+## Changelog
+
+## Roadmap
+
+## License
+
+Distributed under the terms of the [MIT](https://github.com/weastur/votion/blob/master/LICENSE) license, pytest is free and open source software.
