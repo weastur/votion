@@ -22,24 +22,9 @@ PreCommit:
     enabled: true
     exclude:
       - '**/*.md'
-PrePush:
-  GitLfs:
+  Lint:
     enabled: true
-    required_executable: 'git-lfs'
-    flags: ['pre-push']
-PostCheckout:
-  GitLfs:
+    required_executable: './hooks/lint.sh'
+  Test:
     enabled: true
-    required_executable: 'git-lfs'
-    flags: ['post-checkout']
-PostCommit:
-  GitLfs:
-    enabled: true
-    required_executable: 'git-lfs'
-    flags: ['post-commit']
-PostMerge:
-  GitLfs:
-    enabled: true
-    required_executable: 'git-lfs'
-    flags: ['post-merge']
-
+    required_executable: './hooks/test.sh'
