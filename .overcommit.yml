@@ -1,3 +1,4 @@
+verify_signatures: false
 CommitMsg:
   CapitalizedSubject:
     enabled: true
@@ -11,7 +12,7 @@ CommitMsg:
   TextWidth:
     enabled: true
     on_warn: fail
-    max_subject_width: 70
+    max_subject_width: 72
     min_subject_width: 10
   TrailingPeriod:
     enabled: true
@@ -21,3 +22,24 @@ PreCommit:
     enabled: true
     exclude:
       - '**/*.md'
+PrePush:
+  GitLfs:
+    enabled: true
+    required_executable: 'git-lfs'
+    flags: ['pre-push']
+PostCheckout:
+  GitLfs:
+    enabled: true
+    required_executable: 'git-lfs'
+    flags: ['post-checkout']
+PostCommit:
+  GitLfs:
+    enabled: true
+    required_executable: 'git-lfs'
+    flags: ['post-commit']
+PostMerge:
+  GitLfs:
+    enabled: true
+    required_executable: 'git-lfs'
+    flags: ['post-merge']
+
