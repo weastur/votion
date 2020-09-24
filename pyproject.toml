@@ -13,7 +13,9 @@ votion = "votion.main:main"
 
 [tool.poetry.dependencies]
 python = "^3.6"
-docker = "^4.2.0"
+docker = "^4.3.0"
+click = "^7.1.2"
+PyYAML = "^5.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
