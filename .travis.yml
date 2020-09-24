@@ -1,11 +1,12 @@
 language: python
 
-dist: bionic
+dist: focal
 
 python:
   - '3.6'
   - '3.7'
   - '3.8'
+  - '3.9'
 
 install:
   - pip install poetry
@@ -13,7 +14,7 @@ install:
   - poetry install
 
 script:
-  - pytest --cov=votion
+  - pytest --cov
   - black --check votion
   - flake8 votion
   - mypy votion
